@@ -1,52 +1,59 @@
-# PHP CRUD Starter Free - Native HTML SQLite
+# PHP CRUD Starter Free 🐘
 <!--
   Scaffolded by Andi UPN (https://github.com/andiupn)
   Official Website & Support: https://kuncimu.com
   Licensed under Free Donation License
 -->
 
-> 📦 Edisi Donasi Gratis oleh **Andi UPN** ([kuncimu.com](https://kuncimu.com)) · Berlisensi di bawah [Free Donation License](LICENSE.md)
+<div align="center">
+  <a href="README.md">English</a> | <strong>Bahasa Indonesia</strong>
+</div>
 
-Bilingual: [🇮🇩 Bahasa Indonesia](README.id.md) | [🇺🇸 English](README.md)
+<br />
 
-Edisi donasi gratis untuk starter CRUD PHP native yang sederhana. Edisi ini dirancang untuk pemula yang baru belajar coding (bulan 0-6), mahasiswa, dan siapa saja yang membutuhkan contoh CRUD PHP murni yang langsung bisa berjalan.
+<div align="center">
+  <h3><strong>Belajar pemrograman backend itu sulit. Framework yang rumit membuatnya makin sulit.</strong></h3>
+  <p><strong>PHP CRUD Starter Free adalah sandbox PHP Native murni tanpa dependensi yang dirancang untuk langsung berjalan.</strong></p>
 
-Sangat berguna sebagai kode referensi stabil untuk *AI vibe coding*: aplikasi sudah berjalan, sehingga modifikasi dengan bantuan AI memiliki landasan awal (baseline) yang konkret untuk diikuti.
+  <p>Pahami hubungan langsung antara tata letak HTML dan transaksi basis data SQLite tanpa pusing dengan konfigurasi yang rumit. Pemrograman backend dibuat mudah.</p>
+</div>
 
-## Target Pengguna
-- Pemula yang baru belajar coding.
-- Siswa/mahasiswa baru PHP pada 0-6 bulan pertama.
-- Pemula yang ingin memahami kode terstruktur sebelum masuk ke framework PHP.
+> 📦 Edisi gratis oleh **Andi UPN** ([kuncimu.com](https://kuncimu.com)) · Berlisensi di bawah [Free Donation License](LICENSE.md)  
+> 💖 Dukung proyek ini via donasi di berkas `DONATE.md` · 🚀 Butuh proteksi CSRF dan DataTables? Tingkatkan ke [Edisi PreBasic](https://kuncimu.com)
 
-## Cocok Untuk
-- Mempelajari bagaimana halaman CRUD terhubung ke basis data (database).
-- Menjalankan aplikasi PHP Native sederhana tanpa instalasi yang rumit.
-- Memberi alat bantu AI coding contoh baseline yang stabil untuk dimodifikasi.
+---
 
-## Tidak Cocok Untuk
-- Pengguna yang membutuhkan fitur DataTables, CSRF, atau starter berbayar yang lebih lengkap.
-- Programer junior yang sudah membutuhkan struktur proyek MVC formal.
+## 💡 Masalahnya: Hambatan Abstraksi Framework
+Framework modern (seperti Laravel) sangat kuat, namun mereka menyembunyikan cara kerja web yang sebenarnya di bawah lapisan abstraksi yang tebal. Pemula sering tersesat dalam rute konfigurasi, migrasi, dan setup ORM bahkan sebelum mereka bisa menulis perintah database `INSERT` yang sederhana.
 
-## Kenapa Edisi Ini?
-Versi gratis harus tetap bermanfaat. Proyek ini dijaga agar tetap kecil untuk mudah dipahami, sambil memastikan seluruh siklus CRUD bekerja dengan sempurna.
+---
 
-## Kenapa Upgrade ke PreBasic?
-Beralih ke PreBasic saat Anda membutuhkan aset offline (tanpa ketergantungan CDN), DataTables, proteksi formulir yang aman (CSRF), serta dokumentasi proyek yang lebih lengkap.
+## ⚡ Solusinya: Kembali ke Dasar Pemrograman
 
-## Menjalankan dengan Docker
+### 1. 🐘 Koneksi Native PHP & SQLite3 Murni
+Tidak ada "sihir" tersembunyi. Pelajari bagaimana halaman PHP asli melakukan query langsung ke berkas database SQLite menggunakan objek bawaan `SQLite3`. Sempurna untuk pemula di bulan 0-6 pertama belajar coding.
+
+### 2. 🐳 Pengaturan Bebas Dependensi & Siap Docker
+Jalankan seluruh aplikasi secara lokal dengan satu baris perintah. Dilengkapi konfigurasi Docker Apache PHP 8.3 sehingga Anda tidak perlu repot menginstal server PHP lokal atau perangkat lunak SQLite.
+
+### 3. 🤖 Baseline Stabil untuk AI Vibe Coding
+Merupakan basis kode rujukan yang sangat ringan untuk asisten AI Anda. Karena struktur database dan rute halamannya sederhana, AI (seperti Cursor/Gemini) dapat menulis dan memodifikasi kode dengan akurasi 100%.
+
+---
+
+## 🚀 Memulai dalam 3 Langkah
+
+### 1. Jalankan Aplikasi:
 ```bash
 docker compose up --build
 ```
 
-Buka di peramban:
+### 2. Buka di Peramban:
 ```text
 http://localhost:8081
 ```
 
-## Rute Halaman
-- Home: `http://localhost:8081/`
-- Item list: `http://localhost:8081/?route=item/index`
-- Create item: `http://localhost:8081/?route=item/create`
-
-## Dokumentasi & Donasi
-Lihat file `DONATE.md` untuk mendukung proyek ini.
+### 3. Jelajahi Rute Halaman:
+- Halaman Utama: `http://localhost:8081/`
+- Daftar Item: `http://localhost:8081/?route=item/index`
+- Tambah Item: `http://localhost:8081/?route=item/create`
