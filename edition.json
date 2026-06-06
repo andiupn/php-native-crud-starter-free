@@ -1,0 +1,15 @@
+{
+  "name": "PHP CRUD Starter Free - Native HTML SQLite",
+  "slug": "free-native-html-sqlite",
+  "tier": "free",
+  "backend": "native",
+  "frontend": "html",
+  "database": "sqlite",
+  "language": "eng",
+  "primary_php": "php83",
+  "source_archive": "docs/Plan Awal/Raw Source Code/Siap di Jual/1.02-01.1-_.Free-eng Native SQLite PHP_8.3.16 WIN CRUD/crud.01.1._.eng.PHP_8.3.16 - final.zip",
+  "license_type": "free-donation",
+  "distribution": "public-donation",
+  "status": "phase-1-built"
+}
+

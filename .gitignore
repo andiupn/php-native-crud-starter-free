@@ -1,0 +1,7 @@
+/logs/*.log
+/logs/*.txt
+/db/*.sqlite-journal
+/db/*.sqlite-shm
+/db/*.sqlite-wal
+/.DS_Store
+

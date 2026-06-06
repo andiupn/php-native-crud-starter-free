@@ -1,0 +1,326 @@
+/*
+ * ================================================================
+ *  WATERMARK / LICENSE NOTICE
+ *  Email   : andi.upn@gmail.com
+ *  Website : kuncimu.com
+ *  Info    : This source code is created and only sold officially on the mentioned website
+ *            or official online store on the mentioned website.
+ *            Support development by purchasing from the original store. Thank you.
+ * ================================================================
+ */
+
+/**
+ * STYLE.CSS - Custom Styling for CRUD Simple with Bootstrap 5
+ *
+ * Only additional styling needed for Bootstrap 5
+ * Most styling already uses Bootstrap 5 utility classes
+ */
+
+/* Custom Variables for consistency */
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --success-gradient: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    --warning-gradient: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+    --danger-gradient: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+/* Base Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Header Backgrounds */
+.bg-primary-gradient {
+    background: var(--primary-gradient) !important;
+}
+
+.bg-success-gradient {
+    background: var(--success-gradient) !important;
+}
+
+.bg-warning-gradient {
+    background: var(--warning-gradient) !important;
+}
+
+.bg-danger-gradient {
+    background: var(--danger-gradient) !important;
+}
+
+/* Enhanced Card Shadows */
+.card {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px);
+}
+
+.border-accent-primary {
+    border-left: 4px solid var(--bs-primary) !important;
+}
+
+.border-accent-success {
+    border-left: 4px solid var(--bs-success) !important;
+}
+
+.border-accent-warning {
+    border-left: 4px solid var(--bs-warning) !important;
+}
+
+.border-accent-danger {
+    border-left: 4px solid var(--bs-danger) !important;
+}
+
+.border-accent-info {
+    border-left: 4px solid var(--bs-info) !important;
+}
+
+/* Custom Form Styling */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Enhanced Buttons */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Custom Badge Styling */
+.badge {
+    font-weight: 500;
+}
+
+/* Enhanced Table Styling */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+}
+
+.crud-contact-cell a {
+    overflow-wrap: anywhere;
+}
+
+/* Custom Alert Styling */
+.alert {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.alert-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Enhanced Empty State */
+.empty-state {
+    padding: 3rem 1.5rem;
+}
+
+.empty-state .display-1 {
+    font-size: 4rem;
+    opacity: 0.5;
+}
+
+/* Custom Footer Styling */
+footer {
+    background: #f8f9fa;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .crud-list-table thead {
+        display: none;
+    }
+
+    .crud-list-table,
+    .crud-list-table tbody,
+    .crud-list-table tr,
+    .crud-list-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .crud-list-table tbody tr {
+        padding: 1rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .crud-list-table tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    .crud-list-table td {
+        border: 0;
+        padding: 0.35rem 0;
+        text-align: left !important;
+    }
+
+    .crud-list-table td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 0.2rem;
+        color: #6c757d;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .crud-list-table .crud-cell-number {
+        padding-top: 0;
+    }
+
+    .crud-list-table .crud-actions-cell {
+        padding-top: 0.85rem;
+    }
+
+    .crud-list-table .crud-actions-cell .btn {
+        display: block;
+        width: 100%;
+    }
+
+    .crud-list-table .crud-actions-cell .btn + .btn {
+        margin-top: 0.5rem;
+    }
+
+    .table-responsive {
+        overflow-x: visible;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-group .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .d-flex.flex-wrap {
+        flex-direction: column;
+    }
+
+    .d-flex.flex-wrap .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .btn,
+    .alert,
+    footer {
+        display: none !important;
+    }
+
+    .card {
+        border: 1px solid #dee2e6 !important;
+        box-shadow: none !important;
+    }
+
+    .table {
+        border-collapse: collapse;
+    }
+
+    .table th,
+    .table td {
+        border: 1px solid #dee2e6;
+        padding: 0.75rem;
+    }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+
+    .card {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+
+    .bg-light {
+        background-color: #2d2d2d !important;
+    }
+
+    .text-muted {
+        color: #adb5bd !important;
+    }
+
+    .table {
+        color: #ffffff;
+    }
+
+    .table thead th {
+        background-color: #495057;
+        border-color: #6c757d;
+        color: #ffffff;
+    }
+}
+
+/* Animation for smooth transitions */
+* {
+    transition: color 0.15s ease-in-out,
+                background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out,
+                box-shadow 0.15s ease-in-out;
+}
+
+/* Custom scrollbar for Webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

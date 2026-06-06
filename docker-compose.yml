@@ -1,0 +1,16 @@
+name: php-crud-starter-free-native-html-sqlite
+
+services:
+  web:
+    image: php-crud-starter-free-native-html-sqlite:local
+    build:
+      context: .
+    ports:
+      - "8081:80"
+    environment:
+      APP_NAME: "PHP CRUD Starter Free"
+      APP_BASE_URL: ""
+      APP_ASSETS_URL: "assets"
+      DB_PATH: "/var/www/html/db/database.sqlite"
+    volumes:
+      - ./db:/var/www/html/db
