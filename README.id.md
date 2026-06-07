@@ -19,7 +19,7 @@
 </div>
 
 > 📦 Edisi gratis oleh **Andi UPN** ([kuncimu.com](https://kuncimu.com)) · Berlisensi di bawah [Free Donation License](LICENSE.md)  
-> 💖 Dukung proyek ini via donasi di berkas `DONATE.md` · 🚀 Butuh proteksi CSRF dan DataTables? Tingkatkan ke [Edisi PreBasic](https://kuncimu.com)
+> 💖 Dukung proyek ini via donasi di berkas `DONATE.md` · 🚀 Butuh proteksi CSRF dan DataTables? Tingkatkan ke [Edisi PreBasic](https://github.com/sponsors/andiupn?frequency=monthly)
 
 ---
 
